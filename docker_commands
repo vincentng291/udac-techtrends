@@ -1,11 +1,101 @@
 ## Docker commands used to build the application 
 # TODO: insert the docker build command
+docker build -t xeusteerapat/techtrends:v1.0.0 .
 
 ## Docker commands used to run the application
 # TODO: insert the docker run command
+docker run -d -p 7111:3111 xeusteerapat/techtrends:v1.0.0
 
 ## Docker commands used to get the application logs
 # TODO: insert the docker logs command
+docker logs 00409155f30b
 
 ## Logs from the container running the TechTrends application
 # TODO: paste logs from the Docker container 
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+2022-04-10 13:33:59,647 - werkzeug -  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+2022-04-10 13:33:59,647 - werkzeug -  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+2022-04-10 13:34:13,440 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:34:13] "GET / HTTP/1.1" 200 -
+2022-04-10 13:34:13,440 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:34:13] "GET / HTTP/1.1" 200 -
+2022-04-10 13:34:13,490 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:34:13] "GET /static/css/main.css HTTP/1.1" 200 -
+2022-04-10 13:34:13,490 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:34:13] "GET /static/css/main.css HTTP/1.1" 200 -
+2022-04-10 13:34:13,781 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:34:13] "GET /favicon.ico HTTP/1.1" 404 -
+2022-04-10 13:34:13,781 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:34:13] "GET /favicon.ico HTTP/1.1" 404 -
+2022-04-10 13:35:50,956 - app - 2020 CNCF Annual Report Article retrieved
+2022-04-10 13:35:50,956 - app - 2020 CNCF Annual Report Article retrieved
+2022-04-10 13:35:50,962 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:35:50] "GET /1 HTTP/1.1" 200 -
+2022-04-10 13:35:50,962 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:35:50] "GET /1 HTTP/1.1" 200 -
+2022-04-10 13:35:52,965 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:35:52] "GET / HTTP/1.1" 200 -
+2022-04-10 13:35:52,965 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:35:52] "GET / HTTP/1.1" 200 -
+2022-04-10 13:35:55,999 - app - Kubernetes v1.20 Release Notes Article retrieved
+2022-04-10 13:35:55,999 - app - Kubernetes v1.20 Release Notes Article retrieved
+2022-04-10 13:35:56,000 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:35:56] "GET /3 HTTP/1.1" 200 -
+2022-04-10 13:35:56,000 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:35:56] "GET /3 HTTP/1.1" 200 -
+2022-04-10 13:35:57,349 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:35:57] "GET / HTTP/1.1" 200 -
+2022-04-10 13:35:57,349 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:35:57] "GET / HTTP/1.1" 200 -
+2022-04-10 13:35:58,778 - app - About page
+2022-04-10 13:35:58,778 - app - About page
+2022-04-10 13:35:58,781 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:35:58] "GET /about HTTP/1.1" 200 -
+2022-04-10 13:35:58,781 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:35:58] "GET /about HTTP/1.1" 200 -
+2022-04-10 13:36:00,222 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:00] "GET / HTTP/1.1" 200 -
+2022-04-10 13:36:00,222 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:00] "GET / HTTP/1.1" 200 -
+2022-04-10 13:36:03,550 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:03] "GET /create HTTP/1.1" 200 -
+2022-04-10 13:36:03,550 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:03] "GET /create HTTP/1.1" 200 -
+2022-04-10 13:36:21,820 - app - This is a new post New article created:
+2022-04-10 13:36:21,820 - app - This is a new post New article created:
+2022-04-10 13:36:21,825 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:21] "POST /create HTTP/1.1" 302 -
+2022-04-10 13:36:21,825 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:21] "POST /create HTTP/1.1" 302 -
+2022-04-10 13:36:21,831 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:21] "GET / HTTP/1.1" 200 -
+2022-04-10 13:36:21,831 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:21] "GET / HTTP/1.1" 200 -
+2022-04-10 13:36:24,208 - app - This is a new post Article retrieved
+2022-04-10 13:36:24,208 - app - This is a new post Article retrieved
+2022-04-10 13:36:24,209 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:24] "GET /7 HTTP/1.1" 200 -
+2022-04-10 13:36:24,209 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:24] "GET /7 HTTP/1.1" 200 -
+2022-04-10 13:36:26,320 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:26] "GET / HTTP/1.1" 200 -
+2022-04-10 13:36:26,320 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:26] "GET / HTTP/1.1" 200 -
+2022-04-10 13:36:32,380 - app - Exception on /13432 [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 89, in post
+    post = get_post(post_id)
+  File "app.py", line 30, in get_post
+    app.logger.info("%s Article retrieved", post["title"])
+TypeError: 'NoneType' object is not subscriptable
+2022-04-10 13:36:32,381 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:32] "GET /13432 HTTP/1.1" 500 -
+2022-04-10 13:36:32,380 - app - Exception on /13432 [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 89, in post
+    post = get_post(post_id)
+  File "app.py", line 30, in get_post
+    app.logger.info("%s Article retrieved", post["title"])
+TypeError: 'NoneType' object is not subscriptable
+2022-04-10 13:36:32,381 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:32] "GET /13432 HTTP/1.1" 500 -
+2022-04-10 13:36:37,848 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:37] "GET /fsd HTTP/1.1" 404 -
+2022-04-10 13:36:37,848 - werkzeug - 172.17.0.1 - - [10/Apr/2022 13:36:37] "GET /fsd HTTP/1.1" 404 -
