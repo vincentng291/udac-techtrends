@@ -24,20 +24,8 @@ spec:
       - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: techtrends
-        resources:
-          requests:
-            memory: '64Mi'
-            cpu: '250m'
-          limits:
-            memory: '128Mi'
-            cpu: '500m'
+        resources: {{ .Values.resources }}
         ports:
-          - containerPort: 3111
-        livenessProbe:
-          httpGet:
-            path: /healthz
-            port: 3111
-        readinessProbe:
-          httpGet:
-            path: /healthz
-            port: 3111
+          - containerPort: {{ .Values.ports.containerPort }}
+        livenessProbe: {{ .Values.ports.livenessProbe }}
+        readinessProbe: {{ .Values.ports.livenessProbe }}

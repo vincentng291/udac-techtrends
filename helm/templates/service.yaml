@@ -8,6 +8,6 @@ spec:
     app: techtrends
   ports:
     - port: {{ .Values.service.port }}
-      protocol: TCP
+      protocol: {{ .Values.ports.protocol }}
       targetPort: {{ .Values.service.port }}
   type: {{ .Values.service.type }}
