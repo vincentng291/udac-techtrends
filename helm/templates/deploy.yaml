@@ -24,8 +24,20 @@ spec:
       - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: techtrends
-        resources: {{ .Values.resources }}
+        resources:
+          requests:
+            memory: {{ .Values.resources.requests.memory }}
+            cpu: {{ .Values.resources.requests.cpu }}
+          limits:
+            memory: {{ .Values.resources.limits.memory }}
+            cpu: {{ .Values.resources.limits.cpu }}
         ports:
           - containerPort: {{ .Values.ports.containerPort }}
-        livenessProbe: {{ .Values.ports.livenessProbe }}
-        readinessProbe: {{ .Values.ports.readinessProbe }}
+        livenessProbe:
+          httpGet:
+            path: {{ .Values.ports.livenessProbe.httpGet.path }}
+            port: {{ .Values.ports.containerPort }}
+        readinessProbe:
+          httpGet:
+            path: {{ .Values.ports.readinessProbe.httpGet.path }}
+            port: {{ .Values.ports.containerPort }}
