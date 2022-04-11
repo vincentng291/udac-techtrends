@@ -28,4 +28,4 @@ spec:
         ports:
           - containerPort: {{ .Values.ports.containerPort }}
         livenessProbe: {{ .Values.ports.livenessProbe }}
-        readinessProbe: {{ .Values.ports.livenessProbe }}
+        readinessProbe: {{ .Values.ports.readinessProbe }}
