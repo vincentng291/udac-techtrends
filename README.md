@@ -1,3 +1,3 @@
 # TechTrends
 
-Udacity: Cloud-Native Application Architecture
+Udacity: Cloud-Native Application Architecture Course
